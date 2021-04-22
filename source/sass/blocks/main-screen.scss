@@ -1,3 +1,101 @@
 .main-screen {
-  @include redline;
+  @include flex-row;
+  align-items: center;
+
+  min-height: 650px;
+
+  background-color: $main-screen-bg-color;
+  background-image: url("../../img/bg-main-screen-desktop@1x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-main-screen-desktop@2x.png");
+  }
+}
+
+.main-screen__wrapper {
+  @include flex-column;
+  justify-content: flex-start;
+
+  color: $text-color-light;
+
+  margin-bottom: 5px;
+
+  margin-left: calc(((100vw - var(--width)) / 2) + var(--gap) + 95px);
+}
+
+.main-screen h2 {
+  @include reset-space;
+  font-size: 54px;
+  line-height: 66px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.main-screen p {
+  @include reset-space;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@media (max-width: $tablet-width-only) {
+  .main-screen {
+    min-height: 638px;
+    background-image: url("../../img/bg-main-screen-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-main-screen-tablet@2x.png");
+    }
+  }
+
+  .main-screen__wrapper {
+    margin-left: 45px;
+    margin-bottom: 3px;
+  }
+
+  .main-screen h2 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .main-screen p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-screen {
+    min-height: 500px;
+    background-image: url("../../img/bg-main-screen-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-main-screen-mobile@2x.png");
+    }
+  }
+
+  .main-screen__wrapper {
+    margin-left: 15px;
+    margin-bottom: 3px;
+  }
+
+  .main-screen h2 {
+    @include flex-column;
+
+    font-size: 36px;
+    line-height: 45px;
+
+    max-width: 270px;
+  }
+
+  .main-screen p {
+    font-size: 16px;
+    line-height: 22px;
+
+    max-width: 205px;
+  }
 }

@@ -45,6 +45,10 @@
   max-width: 1440px;
 }
 
+@mixin container {
+  margin: 0 auto;
+}
+
 @mixin desktop-container {
   width: $desktop-width;
   margin: 0 auto;
@@ -58,17 +62,19 @@
 }
 
 @mixin active-states($current-color) {
+  $color: complement($current-color);
+
   &:hover,
   &:focus {
-    color: complement($current-color);
-    border-color: complement($current-color);
-    fill: complement($current-color);
+    color: $color;
+    border-color: $color;
+    fill: $color;
   }
 
   &:active {
-    color: rgba(complement($current-color), 0.4);
-    border-color: rgba(complement($current-color), 0.4);
-    fill: rgba(complement($current-color), 0.4);
+    color: rgba($color, 0.4);
+    border-color: rgba($color, 0.4);
+    fill: rgba($color, 0.4);
     text-shadow: -1px 1px 0 $black,
       1px 1px 0 $black,
       1px -1px 0 $black,

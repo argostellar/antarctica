@@ -13,6 +13,25 @@ body {
   overflow-x: hidden;
 
   position: relative;
+
+  --width: 1366px;
+  --gap: 103px;
+  --header-min-height: 108px;
+  --footer-min-height: 138px;
+
+  @media (max-width: $tablet-width-only) {
+    --width: 768px;
+    --gap: 45px;
+    --header-min-height: 80px;
+    --footer-min-height: 120px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    --width: 320px;
+    --gap: 15px;
+    --header-min-height: 62px;
+    --footer-min-height: 283px;
+  }
 }
 
 img {
