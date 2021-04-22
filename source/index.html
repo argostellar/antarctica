@@ -21,19 +21,19 @@
   <header class="main-header main-header--no-js">
     <a class="main-header__logo">
       <svg class="main-header__logo-icon" xmlns="http://www.w3.org/2000/svg" width="70" height="38">
-            <use xlink:href="#icon-logo"></use>
+        <use xlink:href="#icon-logo"></use>
       </svg>
     </a>
     <button class="main-header__cls-btn" type="button">
       <span class="visually-hidden">Закрыть меню</span>
       <svg class="main-header__cls-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15">
-            <use xlink:href="#icon-close"></use>
+        <use xlink:href="#icon-close"></use>
       </svg>
     </button>
     <button class="main-header__menu-btn" type="button">
       <span class="visually-hidden">Открыть меню</span>
       <svg class="main-header__menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="14">
-            <use xlink:href="#icon-menu"></use>
+        <use xlink:href="#icon-menu"></use>
       </svg>
     </button>
     <nav class="main-header__nav">
@@ -61,26 +61,47 @@
       </div>
     </section>
     <section class="description">
-      <h3>Путешествие на край Земли</h3>
-      <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
-      <img src="img/image-penguins.png" alt="Изображение пингвинов">
+      <div class="description__text-wrapper">
+        <h3>Путешествие на край Земли</h3>
+        <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+      </div>
+      <div class="description__img-wrapper">
+        <picture>
+          <!-- 1х: 560px; 2x: 1120px -->
+          <source type="image/webp" srcset="img/image-penguins@1x.webp 1x, img/image-penguins@2x.webp 2x">
+          <!-- 1х: 560px; 2x: 1120px -->
+          <img src="img/image-penguins@1x.png" srcset="img/image-penguins@2x.png 2x" width="560" height="301" loading="lazy" alt="Изображение пингвинов">
+        </picture>
+      </div>
     </section>
     <section class="advantages" id="advantages">
       <h3>Преимущества</h3>
       <ul class="advantages__list">
         <li class="advantages__item">
-          <div class="advantages__svg-wrapper"></div>
+          <div class="advantages__icon-wrapper">
+            <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="32">
+              <use xlink:href="#icon-ship"></use>
+            </svg>
+          </div>
           <h4>Небольшой круизный лайнер</h4>
           <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
         </li>
         <li class="advantages__item">
-          <div class="advantages__svg-wrapper"></div>
+          <div class="advantages__icon-wrapper">
+            <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="38" height="21">
+              <use xlink:href="#icon-tick"></use>
+            </svg>
+          </div>
           <h4>Система все включено</h4>
           <p>Все наши круизы работают
             по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
         </li>
         <li class="advantages__item">
-          <div class="advantages__svg-wrapper"></div>
+          <div class="advantages__icon-wrapper">
+            <svg class="advantages__icon" xmlns="http://www.w3.org/2000/svg" width="42" height="15">
+              <use xlink:href="#icon-boat"></use>
+            </svg>
+          </div>
           <h4>Экскурсионные туры на Zodiac</h4>
           <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.</p>
         </li>
