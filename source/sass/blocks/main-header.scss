@@ -42,11 +42,17 @@
 .main-header__nav-list {
   @include clear-list;
   @include flex-row;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  max-width: 70vw;
 }
 
 .main-header__nav-item {
   margin-left: 33px;
+  margin-bottom: 23px;
+
+  max-width: 170px;
 }
 
 .main-header__nav-link {
@@ -86,6 +92,10 @@
   .main-header__nav {
     margin-top: -2px;
     padding-top: 0;
+  }
+
+  .main-header__nav-list {
+    max-width: 80vw;
   }
 
   .main-header__nav-item {

@@ -6,6 +6,8 @@
 }
 
 .contacts__map {
+  align-self: center;
+
   position: relative;
 
   &::before {
@@ -125,11 +127,13 @@
   }
 
   .contacts__link {
-    max-width: 265px;
+    max-width: 283px;
     margin-bottom: 21px;
   }
 
   .contacts__link--adress {
+    @include flex-column;
+
     &::before {
       top: 5px;
     }
@@ -150,6 +154,10 @@
     margin-bottom: 15px;
   }
 
+  .contacts__info p {
+    max-width: 286px;
+  }
+
   .contacts__map {
     &::before {
       bottom: 77px;
@@ -161,5 +169,4 @@
     width: 290px;
     height: 316px;
   }
-
 }

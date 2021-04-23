@@ -1,7 +1,7 @@
 .advantages {
   @include flex-column;
   align-items: center;
-  padding: 120px calc(((100vw - var(--width)) / 2) + var(--gap));
+  padding: 120px calc(((100vw - var(--width)) / 2) + var(--gap) - 10px);
   padding-bottom: 80px;
 
   background-color: $advantages-bg-color;
@@ -45,9 +45,10 @@
   --item-width: calc(((100vw - var(--gap) * 2) - 80px) / 3);
 
   width: clamp(206px, var(--item-width), 360px);
-  min-height: 241px;
+  min-width: 206px;
+  max-width: 360px;
 
-  max-width: 35%;
+  min-height: 241px;
 
   margin-right: calc(clamp(30px, var(--margin-gap), 40px));
   margin-bottom: 40px;
@@ -183,4 +184,3 @@
     max-width: 70%;
   }
 }
-

@@ -47,11 +47,16 @@
 .main-footer__nav-list {
   @include clear-list;
   @include flex-row;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  max-width: 70vw;
 }
 
 .main-footer__nav-item {
   margin-right: 33px;
+  margin-bottom: 23px;
+  max-width: 170px;
 }
 
 .main-footer__nav-link {
@@ -76,9 +81,12 @@
 .main-footer__social-list {
   @include clear-list;
   @include flex-row;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin-top: 16px;
+
+  max-width: 135px;
 }
 
 .main-footer__social-item {
@@ -86,6 +94,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 33px;
+  margin-bottom: 10px;
 }
 
 .main-footer__social-item:last-child {

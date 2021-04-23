@@ -2,7 +2,7 @@
   @include flex-row;
   justify-content: space-between;
   padding: 120px calc(((100vw - var(--width)) / 2) + var(--gap));
-  padding-bottom: 113px;
+  padding-bottom: 120px;
 }
 
 .description__text-wrapper {
@@ -22,6 +22,11 @@
 
 .description__text-wrapper p {
   @include reset-space;
+}
+
+.description__img-wrapper {
+  background-color: $description-img-color;
+  height: 301px;
 }
 
 @media (max-width: $tablet-width-only) {
@@ -49,7 +54,7 @@
   }
 
   .description__img-wrapper {
-    background-color: $description-img-color;
+    height: 264px;
   }
 
   .description__img-wrapper img {
