@@ -48,6 +48,10 @@
     max-width: 324px;
   }
 
+  .description__img-wrapper {
+    background-color: $description-img-color;
+  }
+
   .description__img-wrapper img {
     object-fit: cover;
     width: 324px;

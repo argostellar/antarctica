@@ -289,9 +289,38 @@
       </ul>
     </section>
     <section class="feedback">
-      <h3>Раннее бронирование</h3>
-      <p>Забронируйте тур за 3-6 месяцев
-        до даты выезда и сэкономьте до 50%</p>
+      <div class="feedback__promo-wrapper">
+        <h3>Раннее бронирование</h3>
+        <p>Забронируйте тур за 3-6 месяцев
+          до даты выезда и сэкономьте до 50%</p>
+      </div>
+      <div class="feedback__form-wrapper">
+        <form class="feedback__form">
+          <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+          <div class="feedback__inputs-wrapper">
+            <label for="name-input">
+              <span class="visually-hidden">Имя: </span>
+            </label>
+            <input type="text" name="user-name" id="name-input" placeholder="Валерия" required>
+            <label for="phone-input">
+              <span class="visually-hidden">Электронный адрес: </span>
+            </label>
+            <input type="tel" name="user-phone" id="phone-input" placeholder="89236889975" pattern="(\+7\([0-9]{3}\)[0-9]{3}[0-9]{4})|(\+7[0-9]{10})|([0-9]{11})" required>
+            <label for="email-input">
+              <span class="visually-hidden">Телефон: </span>
+            </label>
+            <input type="email" name="user-email" id="email-input" placeholder="grishaewa.lera@gmail.com" required>
+            <div class="feedback__checkbox-wrapper">
+              <label tabindex="0" for="form-personal-data">
+              <input type="checkbox" name="personal-data" id="form-personal-data" checked>
+                <div class="feedback__pseudo-checkbox"></div>
+                <span>Я согласен на обработку моих персональных данных</span>
+              </label>
+            </div>
+          </div>
+          <button class="form__btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
     </section>
     <section class="contacts" id="contacts">
       <h3>Контакты</h3>

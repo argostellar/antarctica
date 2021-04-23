@@ -4,7 +4,7 @@
 
   padding: 0 calc(((100vw - var(--width)) / 2) + var(--gap));
   padding-top: 112px;
-  padding-bottom: 150px;
+  padding-bottom: 105px;
 }
 
 .catalogue h3 {
@@ -154,7 +154,7 @@
 @media (max-width: $tablet-width-only) {
   .catalogue {
     padding-top: 91px;
-    padding-bottom: 100px;
+    padding-bottom: 85px;
   }
 
   .catalogue h3 {
@@ -201,7 +201,7 @@
 @media (max-width: $mobile-width-only) {
   .catalogue {
     padding-top: 58px;
-    padding-bottom: 65px;
+    padding-bottom: 50px;
   }
 
   .catalogue h3 {
