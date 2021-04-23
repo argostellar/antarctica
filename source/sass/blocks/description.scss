@@ -63,7 +63,7 @@
   .description {
     @include flex-column;
     padding-top: 65px;
-    padding-bottom: 58px;
+    padding-bottom: 65px;
   }
 
   .description__text-wrapper {
@@ -81,6 +81,10 @@
 
   .description__text-wrapper p {
     max-width: 320px;
+  }
+
+  .description__img-wrapper {
+    height: 186px;
   }
 
   .description__img-wrapper img {

@@ -20,6 +20,7 @@
   </div>
   <header class="main-header main-header--no-js">
     <a class="main-header__logo">
+      <span class="visually-hidden">Логотип</span>
       <svg class="main-header__logo-icon" xmlns="http://www.w3.org/2000/svg" width="70" height="38">
         <use xlink:href="#icon-logo"></use>
       </svg>
@@ -323,18 +324,30 @@
       </div>
     </section>
     <section class="contacts" id="contacts">
-      <h3>Контакты</h3>
-      <div class="contacts__map"></div>
+      <h3 class="visually-hidden">Контакты</h3>
+      <div class="contacts__map">
+        <picture>
+          <!-- 1х: 560px; 2x: 1120px -->
+          <source type="image/webp" srcset="img/image-map@1x.webp 1x, img/image-map@2x.webp 2x">
+          <!-- 1х: 560px; 2x: 1120px -->
+          <img src="img/image-map@1x.png" srcset="img/image-map@2x.png 2x" width="560" height="306" loading="lazy" alt="Изображение карты с местоположением организации">
+        </picture>
+      </div>
       <div class="contacts__info">
         <p>У вас ещё остались вопросы или сомнения?
           Приезжайте к нам в офис и мы вам все расскажем.</p>
-        <a href="">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</a>
-        <a href="">8-800-200-00-00</a>
+        <a class="contacts__link contacts__link--adress" href="#adress">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</a>
+        <a class="contacts__link contacts__link--phone" href="tel:88002000000">8-800-200-00-00</a>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo">LOGO</a>
+    <a class="main-footer__logo">
+      <span class="visually-hidden">Логотип</span>
+      <svg class="main-footer__logo-icon" xmlns="http://www.w3.org/2000/svg" width="70" height="38">
+        <use xlink:href="#icon-logo"></use>
+      </svg>
+    </a>
     <nav class="main-footer__nav nav">
       <ul class="main-footer__nav-list">
         <li class="main-footer__nav-item">
@@ -354,17 +367,17 @@
     <ul class="main-footer__social-list">
       <li class="main-footer__social-item">
         <a href="" class="main-footer__social-link">
-          <span class="visually-hidden">SOCIAL</span>
+          <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="main-footer__social-item">
         <a href="" class="main-footer__social-link">
-          <span class="visually-hidden">SOCIAL</span>
+          <span class="visually-hidden">Intagram</span>
         </a>
       </li>
       <li class="main-footer__social-item">
         <a href="" class="main-footer__social-link">
-          <span class="visually-hidden">SOCIAL</span>
+          <span class="visually-hidden">Twitter</span>
         </a>
       </li>
     </ul>
