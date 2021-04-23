@@ -2,7 +2,7 @@
   @include flex-row;
   justify-content: space-between;
   padding: 120px calc(((100vw - var(--width)) / 2) + var(--gap));
-  padding-bottom: 146px;
+  padding-bottom: 113px;
 }
 
 .contacts__map {
@@ -99,7 +99,7 @@
 @media (max-width: $tablet-width-only) {
   .contacts {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 93px;
   }
 
   .contacts__map {
@@ -140,7 +140,7 @@
   .contacts {
     @include flex-column;
     padding-top: 59px;
-    padding-bottom: 65px;
+    padding-bottom: 58px;
   }
 
   .contacts__info {
