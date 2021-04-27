@@ -1,12 +1,13 @@
 .description {
   @include flex-row;
   justify-content: space-between;
-  padding: 120px calc(((100vw - var(--width)) / 2) + var(--gap));
+  padding: 120px var(--border-gap);
   padding-bottom: 120px;
 }
 
 .description__text-wrapper {
   padding-top: 58px;
+  margin-right: 15px;
   width: 50%;
   max-width: 512px;
 }
@@ -78,6 +79,7 @@
   .description__text-wrapper {
     width: auto;
     max-width: 320px;
+    margin-right: 0;
     margin-bottom: 33px;
   }
 

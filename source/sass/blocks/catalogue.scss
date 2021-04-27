@@ -2,7 +2,7 @@
   @include flex-column;
   align-items: center;
 
-  padding: 0 calc(((100vw - var(--width)) / 2) + var(--gap));
+  padding: 0 var(--border-gap);
   padding-top: 112px;
   padding-bottom: 105px;
 }
@@ -29,6 +29,7 @@
 
   max-width: 25%;
   width: 260px;
+  min-width: 260px;
   min-height: 386px;
   height: 386px;
 
@@ -45,9 +46,10 @@
 
 @media (min-width: $desktop-width-only) {
   .catalogue {
-    padding-right: calc(((100vw - var(--width)) / 2) + var(--gap) - 15px);
+    padding-right: calc(var(--border-gap) - 15px);
     --catalogue-item-gap: calc((100vw - var(--gap) * 2) - (260px * 4));
-    --min-margin: calc(0 * 1px);
+    --min-margin: 1px;
+    --card-margin: calc(clamp(var(--min-margin), var(--catalogue-item-gap), 30px));
   }
 
   .catalogue h3 {
@@ -55,16 +57,13 @@
   }
 
   .catalogue__list {
+    justify-content: space-evenly;
     margin-left: calc(clamp(var(--min-margin), var(--catalogue-item-gap) / 2, 15px));
   }
 
   .catalogue__item {
-    margin-right: calc(clamp(var(--min-margin), var(--catalogue-item-gap), 30px));
+    margin-right: var(--card-margin);
     margin-left: 0;
-  }
-
-  .catalogue__item:nth-child(4n) {
-    margin-right: 0;
   }
 }
 

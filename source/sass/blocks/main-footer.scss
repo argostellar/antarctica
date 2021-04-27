@@ -9,7 +9,7 @@
   width: 100%;
   max-width: 100%;
 
-  padding: 0 calc(((100vw - var(--width)) / 2) + var(--gap));
+  padding: 0 var(--border-gap);
   padding-top: 43px;
 
   margin-top: auto;
@@ -39,7 +39,7 @@
   @include clear-list;
   @include flex-row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   max-width: 70vw;
 }
@@ -73,10 +73,12 @@
   @include clear-list;
   @include flex-row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   margin-top: 16px;
+  margin-right: -3px;
 
+  min-width: 120px;
   max-width: 135px;
 }
 
@@ -133,6 +135,7 @@
   }
 
   .main-footer__social-list {
+    min-width: 94px;
     margin-top: 12px;
   }
 

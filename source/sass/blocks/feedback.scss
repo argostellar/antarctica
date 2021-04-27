@@ -2,7 +2,7 @@
   @include flex-row;
   justify-content: space-between;
 
-  padding: 50px calc(((100vw - var(--width)) / 2) + var(--gap));
+  padding: 50px var(--border-gap);
 
   background-color: $feedback-bg-color;
   background-image: url("../img/bg-feedback-desktop@1x.png");
@@ -19,6 +19,7 @@
   align-self: center;
   margin-bottom: 4px;
   margin-left: 60px;
+  margin-right: 20px;
 }
 
 .feedback__promo-wrapper h3 {
@@ -171,6 +172,7 @@
 .feedback__form-btn {
   @include montserrat-font;
   border: none;
+  appearance: none;
   background-color: $text-color-light;
 
   cursor: pointer;
@@ -217,6 +219,7 @@
   .feedback__promo-wrapper {
     @include flex-column;
     align-items: center;
+    margin-right: 0;
     margin-left: 0;
     margin-bottom: 51px;
   }

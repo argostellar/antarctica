@@ -21,6 +21,9 @@ body {
   --header-min-height: 108px;
   --footer-min-height: 138px;
 
+  --current-page-padding: calc(((100vw - var(--width)) / 2) + var(--gap));
+  --border-gap: calc(max(var(--current-page-padding), var(--gap)));
+
   @media (max-width: $tablet-width-only) {
     --width: 768px;
     --gap: 45px;
@@ -72,4 +75,20 @@ input[type="radio"].visually-hidden,
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.overlay {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($black, 0.5);
+
+    z-index: 3;
+  }
 }

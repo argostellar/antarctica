@@ -1,7 +1,7 @@
 .contacts {
   @include flex-row;
   justify-content: space-between;
-  padding: 120px calc(((100vw - var(--width)) / 2) + var(--gap));
+  padding: 120px var(--border-gap);
 }
 
 .contacts__map {
@@ -36,6 +36,7 @@
   content-visibility: auto;
 
   width: 560px;
+  min-width: 560px;
   height: 306px;
 }
 
@@ -45,6 +46,8 @@
 
   max-width: 500px;
   margin-top: 76px;
+
+  margin-left: 20px;
 }
 
 .contacts__info p {
@@ -125,6 +128,7 @@
 
   .contacts__map img {
     width: 324px;
+    min-width: 324px;
     height: 335px;
   }
 
@@ -162,6 +166,7 @@
     order: -1;
     max-width: 324px;
     margin-top: 0;
+    margin-left: 0;
     margin-bottom: 15px;
   }
 
@@ -180,6 +185,7 @@
 
   .contacts__map img {
     width: 290px;
+    min-width: 290px;
     height: 316px;
   }
 }
