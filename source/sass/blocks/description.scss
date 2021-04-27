@@ -29,6 +29,11 @@
   height: 301px;
 }
 
+.description__img-wrapper img {
+  object-fit: cover;
+  content-visibility: auto;
+}
+
 @media (max-width: $tablet-width-only) {
   .description {
     padding-top: 100px;
@@ -58,7 +63,6 @@
   }
 
   .description__img-wrapper img {
-    object-fit: cover;
     width: 324px;
     height: 264px;
   }

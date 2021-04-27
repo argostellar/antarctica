@@ -7,13 +7,14 @@
   min-height: 650px;
 
   background-color: $main-screen-bg-color;
-  background-image: url("../../img/bg-main-screen-desktop@1x.png");
+  background-image: url("../img/bg-main-screen-desktop@1x.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/bg-main-screen-desktop@2x.png");
+    background-image: url("../img/bg-main-screen-desktop@2x.png");
   }
 }
 
@@ -47,10 +48,10 @@
 @media (max-width: $tablet-width-only) {
   .main-screen {
     min-height: 638px;
-    background-image: url("../../img/bg-main-screen-tablet@1x.png");
+    background-image: url("../img/bg-main-screen-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-main-screen-tablet@2x.png");
+      background-image: url("../img/bg-main-screen-tablet@2x.png");
     }
   }
 
@@ -73,10 +74,10 @@
 @media (max-width: $mobile-width-only) {
   .main-screen {
     min-height: 500px;
-    background-image: url("../../img/bg-main-screen-mobile@1x.png");
+    background-image: url("../img/bg-main-screen-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-main-screen-mobile@2x.png");
+      background-image: url("../img/bg-main-screen-mobile@2x.png");
     }
   }
 
@@ -99,5 +100,43 @@
     line-height: 22px;
 
     max-width: 205px;
+  }
+}
+
+@supports not ((initial-letter: 4) or (-webkit-initial-letter: 4)) {
+  @media (min-width: $desktop-width-only) {
+    .main-screen {
+      @media screen {
+        background-image: url("../img/bg-main-screen-desktop@1x.webp");
+      }
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-main-screen-desktop@2x.webp");
+      }
+    }
+  }
+
+  @media (max-width: $tablet-width-only) {
+    .main-screen {
+      @media screen {
+        background-image: url("../img/bg-main-screen-tablet@1x.webp");
+      }
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-main-screen-tablet@2x.webp");
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    .main-screen {
+      @media screen {
+        background-image: url("../img/bg-main-screen-mobile@1x.webp");
+      }
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-main-screen-mobile@2x.webp");
+      }
+    }
   }
 }

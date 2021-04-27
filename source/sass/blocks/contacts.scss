@@ -8,6 +8,8 @@
 .contacts__map {
   align-self: center;
 
+  z-index: 1;
+
   position: relative;
 
   &::before {
@@ -19,12 +21,17 @@
     width: 18px;
     height: 22px;
 
-    background-image: url("../../img/icon-pin.svg");
+    background-image: url("../img/icon-pin.svg");
     background-repeat: no-repeat;
+
+    z-index: 2;
   }
 }
 
 .contacts__map img {
+  object-fit: cover;
+  content-visibility: auto;
+
   width: 560px;
   height: 306px;
 }
@@ -86,7 +93,7 @@
 
 .contacts__link--adress {
   &::before {
-    background-image: url("../../img/icon-pin.svg");
+    background-image: url("../img/icon-pin.svg");
     height: 22px;
   }
 }
@@ -94,7 +101,7 @@
 .contacts__link--phone {
   &::before {
     top: 2px;
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
   }
 }
 
@@ -112,7 +119,6 @@
   }
 
   .contacts__map img {
-    object-fit: cover;
     width: 324px;
     height: 335px;
   }

@@ -15,10 +15,6 @@
 
 .main-header__logo {
   padding-top: 5px;
-
-  &:hover {
-    opacity: 0.8;
-  }
 }
 
 .main-header__logo-icon {
@@ -218,6 +214,8 @@
     margin-bottom: 9px;
 
     margin-left: 0;
+
+    max-width: 270px;
   }
 
   .main-header__nav-link {

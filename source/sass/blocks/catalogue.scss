@@ -72,6 +72,8 @@
   @include flex-column;
   justify-content: flex-start;
 
+  width: 100%;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -95,6 +97,11 @@
   position: absolute;
   bottom: 8px;
   left: 30px;
+}
+
+.catalogue__item img {
+  object-fit: cover;
+  content-visibility: auto;
 }
 
 .catalogue__item:hover {
@@ -154,7 +161,7 @@
   background-color: $text-color-light;
 
   min-height: 40px;
-  max-width: 210px;
+  min-width: 210px;
 
   padding: 14px 46px;
   padding-top: 11px;
@@ -200,7 +207,6 @@
   }
 
   .catalogue__item img {
-    object-fit: cover;
     width: 309px;
     height: 386px;
   }
