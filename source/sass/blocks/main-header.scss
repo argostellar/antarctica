@@ -199,6 +199,7 @@
 
   .main-header__nav-list {
     @include flex-column;
+    margin-bottom: 49px;
   }
 
   .main-header--no-js .main-header__nav-list {
