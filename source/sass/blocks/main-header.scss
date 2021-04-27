@@ -131,6 +131,10 @@
     display: none;
   }
 
+  .main-header--no-js .main-header__cls-btn {
+    display: none;
+  }
+
   .main-header--closed .main-header__menu-btn {
     display: block;
     cursor: pointer;
