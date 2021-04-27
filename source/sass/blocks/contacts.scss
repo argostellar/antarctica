@@ -2,11 +2,14 @@
   @include flex-row;
   justify-content: space-between;
   padding: 120px calc(((100vw - var(--width)) / 2) + var(--gap));
-  padding-bottom: 113px;
 }
 
 .contacts__map {
   align-self: center;
+
+  background-color: $contacts-map-bg-color;
+
+  height: 306px;
 
   z-index: 1;
 
@@ -15,7 +18,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 74px;
+    bottom: 67px;
     left: 249px;
 
     width: 18px;
@@ -108,12 +111,14 @@
 @media (max-width: $tablet-width-only) {
   .contacts {
     padding-top: 100px;
-    padding-bottom: 93px;
+    padding-bottom: 100px;
   }
 
   .contacts__map {
+    height: 335px;
+
     &::before {
-      bottom: 102px;
+      bottom: 95px;
       left: 109px;
     }
   }
@@ -150,7 +155,7 @@
   .contacts {
     @include flex-column;
     padding-top: 59px;
-    padding-bottom: 58px;
+    padding-bottom: 65px;
   }
 
   .contacts__info {
@@ -165,8 +170,10 @@
   }
 
   .contacts__map {
+    height: 316px;
+
     &::before {
-      bottom: 77px;
+      bottom: 70px;
       left: 112px;
     }
   }
