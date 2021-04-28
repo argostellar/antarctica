@@ -117,12 +117,12 @@
 
   .advantages__item {
     width: 206px;
-    height: 310px;
+    min-height: 310px;
 
     margin-right: 30px;
 
     padding-top: 25px;
-    padding-bottom: 45px;
+    padding-bottom: 3px;
     padding-left: 20px;
     padding-right: 15px;
   }
@@ -133,10 +133,18 @@
     margin-bottom: 8px;
   }
 
+  .advantages__item p {
+    padding-bottom: 10px;
+  }
+
   .advantages__icon-wrapper {
     min-height: 26px;
     margin-left: -3px;
     margin-bottom: 22px;
+  }
+
+  .advantages__icon-wrapper svg {
+    height: 26px;
   }
 }
 
@@ -171,14 +179,13 @@
     max-width: 100%;
     width: auto;
     min-width: 290px;
-    min-height: 249px;
-    height: 250px;
+    min-height: 250px;
 
     margin-right: 0;
     margin-bottom: 30px;
 
     padding-top: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 8px;
     padding-left: 20px;
     padding-right: 15px;
   }
