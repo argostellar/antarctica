@@ -255,6 +255,7 @@
 
 @media (max-width: $mobile-width-only) {
   .feedback {
+    padding: 0 var(--inverted-border-gap);
     padding-top: 61px;
     padding-bottom: 65px;
 
@@ -285,7 +286,9 @@
   }
 
   .feedback__form-wrapper {
-    width: 290px;
+    min-width: 290px;
+    width: auto;
+    max-width: 460px;
     height: 460px;
   }
 

@@ -72,26 +72,33 @@
 @media (max-width: $mobile-width-only) {
   .description {
     @include flex-column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--inverted-border-gap);
     padding-top: 65px;
     padding-bottom: 65px;
   }
 
   .description__text-wrapper {
     width: auto;
-    max-width: 320px;
+    min-width: 290px;
+    max-width: 100%;
     margin-right: 0;
     margin-bottom: 33px;
   }
 
   .description__text-wrapper h3 {
+    align-self: center;
     max-width: 190px;
 
     font-size: 24px;
     line-height: 34px;
+
+    margin-left: calc(var(--border-gap) - 15px);
   }
 
   .description__text-wrapper p {
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .description__img-wrapper {

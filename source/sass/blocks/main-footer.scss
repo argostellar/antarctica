@@ -159,6 +159,8 @@
 @media (max-width: $mobile-width-only) {
   .main-footer {
     @include flex-column;
+
+    padding: 0 var(--current-gap);
     padding-top: 33px;
   }
 

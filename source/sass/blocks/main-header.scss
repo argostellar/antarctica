@@ -114,6 +114,8 @@
     min-height: 62px;
     max-height: 100vh;
 
+    padding: 0 var(--current-gap);
+
     overflow-y: auto;
 
     z-index: 5;

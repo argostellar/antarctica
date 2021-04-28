@@ -14,17 +14,15 @@
     const onBtnOpen = () => {
       header.classList.remove(`main-header--closed`);
       body.classList.add(`overlay`);
-      body.style.position = 'fixed';
+      body.style.position = `fixed`;
       body.style.top = `-${window.scrollY}px`;
     };
 
     const onBtnClose = () => {
       header.classList.add(`main-header--closed`);
       body.classList.remove(`overlay`);
-      const scrollY = document.body.style.top;
-      body.style.position = '';
-      body.style.top = '';
-      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      body.style.position = ``;
+      body.style.top = ``;
     };
 
     if (menuOpenBtn) {
