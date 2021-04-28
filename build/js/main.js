@@ -21,8 +21,10 @@
     const onBtnClose = () => {
       header.classList.add(`main-header--closed`);
       body.classList.remove(`overlay`);
+      const scrollY = document.body.style.top;
       body.style.position = ``;
       body.style.top = ``;
+      window.scrollTo(0, parseInt(scrollY || `0`, 10) * -1);
     };
 
     if (menuOpenBtn) {
